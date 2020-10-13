@@ -41,6 +41,8 @@ body {
 
 }
 
+/*** upgrade div ***/
+
 .btn-upgrade {
   /* position: fixed; */
   width: calc(100%);
@@ -58,6 +60,23 @@ body {
   padding: 0 20px;
 
 }
+
+/*** app content  ***/
+
+.app-content {
+  display: flex;
+  /* z-index: 1; */
+  overflow: scroll;
+}
+
+.app-content > p {
+  color: white;
+  align-self: center;
+  padding: 0 250px;
+  font-size: 50px;
+
+}
+
 
 
 /***** MEDIA PLAYER *****/
