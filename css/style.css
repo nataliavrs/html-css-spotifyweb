@@ -35,5 +35,39 @@ body {
 
 .app-content {
   width: calc(100vw - 200px);
-  
+  background-color: salmon;
+
 }
+
+.upgrade {
+  height: 50px;
+  width: 100vw;
+  background-color: red;
+
+}
+
+.upgrade .btn-upgrade {
+  width: 100px;
+  border-radius: 10px;
+  border: solid white 1px;
+
+}
+
+.content-all {
+  display: flex;
+
+  overflow: hidden;
+}
+
+.content-all p {
+  overflow: scroll;
+  font-size: 50px;
+}
+
+/****** MAIN SECTION ******/
+
+/*** side menu ***/
+
+/*** app content ***/
+
+/****** FOOTER SECTION ******/
