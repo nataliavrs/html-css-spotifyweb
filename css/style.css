@@ -1,0 +1,33 @@
+/***** GENERAL RULES *****/
+
+body {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-flex {
+  background-color: black;
+  height: calc(100vh - 50px);
+  width: 100px;
+  border: solid black 1px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/***** MEDIA PLAYER *****/
+
+.media-flex {
+  width: 100vw;
+  height: 50px;
+  background-color: #282828;
+
+
+}
