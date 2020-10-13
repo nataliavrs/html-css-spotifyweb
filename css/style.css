@@ -10,24 +10,64 @@ body {
   box-sizing: border-box;
 }
 
-.menu-flex {
-  background-color: black;
-  height: calc(100vh - 50px);
-  width: 100px;
-  border: solid black 1px;
+.main-container {
+  display: flex;
+
+  flex-flow: row wrap;
 }
 
-.container-flex {
-  display: flex;
-  flex-direction: column;
+/***** SIDE MENU *****/
+
+.menu-flex {
+  background-color: black;
+  height: calc(100vh - 80px);
+  width: 200px;
+  border: solid black 1px;
+  position: fixed;
 }
+
+
+/***** APP PLAYER *****/
+
+.app-flex {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: pink;
+
+}
+
 
 /***** MEDIA PLAYER *****/
 
 .media-flex {
   width: 100vw;
-  height: 50px;
+  height: 80px;
   background-color: #282828;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/*** left side ***/
+
+.left-player {
+  flex-basis: 100px;
+  background-color: pink;
+
+}
 
 
+/*** center ***/
+
+.center-player {
+  flex-basis: 300px;
+  background-color: pink;
+}
+
+/*** right side ***/
+
+.right-player {
+  flex-basis: 100px;
+  background-color: pink;
 }
