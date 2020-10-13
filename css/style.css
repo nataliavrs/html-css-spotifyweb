@@ -3,76 +3,75 @@
 body {
   color: white;
   background-color: pink;
+
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* DEBUG RULES */
-
-.main-all {
-  background-color: darkblue;
-  height: calc(100vh - 80px);
-  width: 100vw;
-  display: flex;
-}
-
-.footer-all {
-  background-color: grey;
-  height: 80px;
-  width: 100vw;
-}
-
-.side-menu {
-  background-color: black;
-  /* height: calc(100vh - 80px);
-  flex-basis: 200px */
-
-}
-
-.app-content {
-  width: calc(100vw);
-  background-color: salmon;
-
-}
-
-.upgrade {
-  height: 50px;
-  width: 100vw;
-  background-color: red;
-
-}
-
-.upgrade .btn-upgrade {
-  width: 100px;
-  border-radius: 10px;
   border: solid white 1px;
-
 }
 
-.content-all {
-  display: flex;
-
-  overflow: hidden;
+.container {
+  background-color: blue;
 }
 
-.content-all p {
-  overflow: scroll;
-  font-size: 50px;
-}
 
 /****** MAIN SECTION ******/
 
+main {
+  display: flex;
+}
+
+
 /*** side menu ***/
 
+.side-menu {
+  width: 200px;
+  max-height: calc(100vh - 80px);
+  background-color: black;
+  overflow: scroll;
+}
+
 /*** app content ***/
+
+.app-content {
+  width: 100vw;
+  background-color: darkblue;
+  max-height: calc(100vh - 80px);
+  overflow: scroll;
+  /* position: relative; */
+
+}
+
+.app-nav {
+  position: sticky;
+  height: 50px;
+  z-index: 5;
+  background-color: red;
+  overflow: scroll;
+}
+
+.test {
+  font-size: 50px;
+}
 
 /****** FOOTER SECTION ******/
 
 .footer-all {
-  width: 100vw;
+  background-color: grey;
+  height: 80px;
   display: flex;
+  justify-content: space-between;
+
+}
+
+/*** player navigation ***/
+
+.footer-all > div {
+  height: 60px;
+  width: 200px;
+  background-color: red;
+  align-self: center;
 }
