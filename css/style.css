@@ -3,6 +3,7 @@
 body {
   color: white;
   background-color: pink;
+  font-family: 'Lato', sans-serif;
 
 }
 
@@ -10,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: solid white 1px;
+  /* border: solid white 1px; */
 }
 
 .container {
@@ -31,8 +32,30 @@ main {
   width: 200px;
   max-height: calc(100vh - 80px);
   background-color: black;
-  overflow: scroll;
+  overflow-y: scroll;
+
 }
+
+.logo {
+  height: 50px;
+  border: solid white 1px;
+
+}
+
+.side-nav {
+  height: 50px;
+  border: solid white 1px;
+}
+
+.side-playlist div {
+
+  font-size: 20px;
+  background-color: green;
+
+
+}
+
+
 
 /*** app content ***/
 
@@ -41,20 +64,65 @@ main {
   background-color: darkblue;
   max-height: calc(100vh - 80px);
   overflow: scroll;
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+
+
 
 }
 
-.app-nav {
-  position: sticky;
+/* upgrade button */
+
+.app-upgrade {
+  position: fixed;
   height: 50px;
   z-index: 5;
   background-color: red;
-  overflow: scroll;
+  width: 100vw;
+  text-align: center;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.61);
+
 }
 
+.app-upgrade > span:only-child {
+  border-radius: 30px;
+  border: solid white 2px;
+  /* display: inline-block; */
+  width: 100px;
+  margin-left: 500px;
+  margin-top: 10px;
+  padding: 10px;
+
+
+
+
+
+}
+
+/* navigation bar */
+
+.app-nav {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  flex-wrap: wrap;
+
+}
+
+.app-nav ul {
+  list-style: none;
+
+}
+
+.app-nav ul > li {
+  display: inline-block;
+}
+
+
 .test {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 /****** FOOTER SECTION ******/
