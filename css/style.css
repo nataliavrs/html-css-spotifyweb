@@ -26,15 +26,15 @@ body {
   width: 100vw;
 }
 
-
 .side-menu {
   background-color: black;
-  height: calc(100vh - 80px);
-  width: 200px;
+  /* height: calc(100vh - 80px);
+  flex-basis: 200px */
+
 }
 
 .app-content {
-  width: calc(100vw - 200px);
+  width: calc(100vw);
   background-color: salmon;
 
 }
@@ -71,3 +71,8 @@ body {
 /*** app content ***/
 
 /****** FOOTER SECTION ******/
+
+.footer-all {
+  width: 100vw;
+  display: flex;
+}
