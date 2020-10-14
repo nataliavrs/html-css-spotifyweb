@@ -3,7 +3,7 @@
 body {
   color: white;
   font-family: 'Lato', sans-serif;
-
+  font-size: 12px;
 }
 
 * {
@@ -42,12 +42,14 @@ main {
 }
 
 .side-playlist {
-  font-size: 20px;
+  
   display: flex;
   flex-direction: column;
   height: calc(100vh - 80px);
 
 }
+
+
 
 .main-title-playlist {
   font-weight: 900;
@@ -61,7 +63,7 @@ main {
 .create-playlist {
   background-color: grey;
   color: black;
-  font-size: 25px;
+  /* font-size: 25px; */
 
 }
 
@@ -72,7 +74,7 @@ main {
 }
 
 .all-playlists > span {
-  display: inline-block;
+  display: block;
 }
 
 .profile-playlist img {
@@ -95,13 +97,18 @@ main {
 
 }
 
+.app-content h1 {
+  font-size: 1.4rem;
+  font-weight: bolder;
+
+}
+
 /** upgrade bar **/
 
 .app-upgrade {
   position: fixed;
   height: 50px;
   z-index: 5;
-
   width: 100vw;
   text-align: center;
   padding-top: 15px;
@@ -112,7 +119,6 @@ main {
 .app-upgrade > span:only-child {
   border-radius: 30px;
   border: solid white 2px;
-
   width: 100px;
   margin-left: 500px;
   margin-top: 10px;
@@ -132,7 +138,7 @@ main {
   text-transform: uppercase;
   color: #7B7E82;
   font-weight: 900;
-  font-size: 13px;
+  /* font-size: 13px; */
 
 }
 
@@ -149,11 +155,6 @@ main {
 /**** ALBUMS & SONGS ****/
 
 /* first row: recently */
-
-.albums-title {
-  font-size: 30px;
-  font-weight: 900;
-}
 
 .albums-recently {
   display: flex;
@@ -180,24 +181,36 @@ main {
 
 /* third row: popular artists */
 
+.app-content section:nth-child(5) img {
+  border-radius: 50%;
+}
 
 
 /****** FOOTER SECTION ******/
 
+/**** PLAYER NAVIGATION ****/
+
 .footer-all {
-  background-color: grey;
+  background-color: #282828;
   height: 80px;
+
   display: flex;
   justify-content: space-between;
 
 }
 
-/**** PLAYER NAVIGATION ****/
+.footer-all > .left-play,.center-play,.right-play {
+  align-self: center;
+  display: flex;
+  font-weight: bolder;
+  z-index: 99;
+  padding: 0 10px;
+}
 
 .slider-bar {
   display: inline-block;
   height: 6px;
-  width: 300px;
+
   vertical-align: middle;
   background-color: grey;
   border-radius: 10px;
@@ -205,26 +218,13 @@ main {
 }
 
 .slider-amount {
-  background-color: white;
   height: 2px;
-  width: 100px;
   border: solid 2px white;
   border-radius: 10px;
 
 }
 
-
 /*** left side ***/
-
-.footer-all > .left-play,.center-play,.right-play {
-  min-height: 60px;
-  min-width: 200px;
-  background-color: red;
-  align-self: center;
-  display: flex;
-  font-weight: bolder;
-  z-index: 99;
-}
 
 .left-play img {
   max-height: 50px;
@@ -248,14 +248,10 @@ main {
   align-self: center;
   color: #616061;
 
-
-
 }
 
 .icons i:last-child {
   margin: 0 5px;
-
-
 }
 
 /*** center ***/
@@ -264,12 +260,33 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-
 }
 
 .slider,.player-btns {
   align-self: center;
+}
+
+.player-btns span > i {
+  margin: 0 10px 10px 10px;
+  font-size: 20px;
+}
+
+.player-btns [class*="fa-play"] {
+  font-size: 30px;
+}
+
+.center-play .slider > span {
+  font-size: 0.6rem;
+  vertical-align: middle;
+}
+
+
+.center-play .slider-bar {
+  width: 300px;
+}
+
+.center-play .slider-amount {
+  width: 100px;
 }
 
 
@@ -277,8 +294,22 @@ main {
 
 .right-play {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 
+}
 
+.right-play span > i {
+  margin: 0 10px;
+
+
+}
+
+
+.right-play .slider-bar {
+  width: 100px;
+}
+
+.right-play .slider-amount {
+  width: 40px;
 }
