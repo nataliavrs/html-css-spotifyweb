@@ -13,7 +13,7 @@ body {
 }
 
 div {
-  border: solid pink 1px;
+  /* border: solid pink 1px; */
 }
 
 /****** MAIN SECTION ******/
@@ -34,15 +34,54 @@ main {
   justify-content: space-between;
   color: #7B7E82;
   font-weight: 800;
+  padding-left: 8px;
+
+
+}
+
+
+
+
+
+
+.side-menu .logo {
+  width: 125px;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.side-nav span {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.side-nav div  {
+  padding: 5px 0;
 
 }
 
 .side-nav img {
-  max-width: 30px;
+  max-width: 23px;
+  vertical-align: middle;
+
+
 }
 
+.side-nav div:nth-child(1) {
+  border-left: solid #ADFF2F 3px;
+
+}
+
+.side-nav div:nth-child(1) span {
+  color: white;
+
+}
+
+
 .side-playlist {
-  
   display: flex;
   flex-direction: column;
   height: calc(100vh - 80px);
@@ -51,21 +90,41 @@ main {
 
 
 
+
+
 .main-title-playlist {
   font-weight: 900;
   margin: 5px 0;
   text-transform: uppercase;
-
+  color: white;
+  font-size: 1.1em;
 
 }
 
 
 .create-playlist {
-  background-color: grey;
+
   color: black;
-  /* font-size: 25px; */
+  display: inline-block;
+
 
 }
+
+.create-playlist span:first-child {
+  font-size: 3.1em;
+  color: #A3A3A3;
+  vertical-align: middle;
+
+}
+
+.create-playlist-text {
+  vertical-align: middle;
+  color: #595959;
+  font-size: 1.1em;
+  
+}
+
+
 
 .all-playlists {
   overflow: scroll;
@@ -75,12 +134,42 @@ main {
 
 .all-playlists > span {
   display: block;
+  margin: 14px 0;
+  text-transform: capitalize;
+  color: #595959;
+}
+
+
+.install {
+  border-bottom: solid grey 1px;
+  padding: 10px 0;
+}
+
+.install > i {
+  margin-right: 10px;
+}
+
+.profile-playlist {
+  margin: 5px 0;
 }
 
 .profile-playlist img {
   max-width: 25px;
+  height: 25px;
+
   background-color: grey;
   border-radius: 50%;
+  vertical-align: middle;
+
+}
+
+.profile-playlist span {
+  vertical-align: middle;
+  color: white;
+  font-weight: 900;
+  font-size: 1.2em;
+
+
 
 }
 
@@ -138,7 +227,7 @@ main {
   text-transform: uppercase;
   color: #7B7E82;
   font-weight: 900;
-  /* font-size: 13px; */
+
 
 }
 
