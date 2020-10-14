@@ -185,11 +185,38 @@ main {
 
 /*** player navigation ***/
 
+.slider-bar {
+  display: inline-block;
+  height: 6px;
+  width: 300px;
+  vertical-align: middle;
+  background-color: grey;
+  border-radius: 10px;
+
+
+
+
+}
+
+.slider-amount {
+  background-color: white;
+  height: 2px;
+  width: 100px;
+  border: solid 2px white;
+  border-radius: 10px;
+
+
+
+
+
+}
+
+
 /** left side **/
 
 .footer-all > .left-play,.center-play,.right-play {
   min-height: 60px;
-  width: 200px;
+  min-width: 200px;
   background-color: red;
   align-self: center;
   display: flex;
@@ -230,7 +257,25 @@ main {
 
 /** center **/
 
+.center-play {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+
+}
+
+.slider,.player-btns {
+  align-self: center;
+}
 
 
 /** right side **/
+
+.right-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
