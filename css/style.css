@@ -2,7 +2,7 @@
 
 body {
   color: white;
-  background-color: pink;
+  background-color: red;
   font-family: 'Lato', sans-serif;
 
 }
@@ -14,9 +14,9 @@ body {
   /* border: solid white 1px; */
 }
 
-div {
+/* div {
   border: solid pink 1px;
-}
+} */
 
 .container {
   background-color: blue;
@@ -39,7 +39,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  color: #7B7E82;
+  font-weight: 800;
 
 
 
@@ -58,9 +59,12 @@ main {
 }
 
 .side-playlist {
-  max-height: 50vh;
+
   font-size: 20px;
   border: solid white 1px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
 
 
 }
@@ -89,8 +93,9 @@ main {
 
 .all-playlists {
   overflow: scroll;
-  height: 200px;
-  border: solid white 1px;
+  max-height: 50%;
+  /* flex-shrink: 3; */
+
 
 }
 
@@ -110,23 +115,21 @@ main {
 
 .app-content {
   width: 100vw;
-  background-color: darkblue;
+  background-color: #141922;
   max-height: calc(100vh - 80px);
   overflow: scroll;
   display: flex;
   flex-direction: column;
 
-
-
 }
 
-/* upgrade button */
+/* upgrade bar */
 
 .app-upgrade {
   position: fixed;
   height: 50px;
   z-index: 5;
-  background-color: red;
+  /* background-color: red; */
   width: 100vw;
   text-align: center;
   padding-top: 15px;
@@ -149,11 +152,17 @@ main {
 /* navigation bar */
 
 .app-nav {
-  margin: 100px 0;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
-  background-color: grey;
+  background-color: #141922;
   flex-wrap: wrap;
+  text-transform: uppercase;
+  color: #7B7E82;
+  font-weight: 900;
+  font-size: 13px;
+
+
 
 }
 
@@ -164,8 +173,10 @@ main {
 
 .app-nav ul > li {
   display: inline-block;
+  margin: 0 10px;
 }
 
+/* albums and songs */
 
 .test {
   font-size: 60px;
@@ -221,6 +232,7 @@ main {
   align-self: center;
   display: flex;
   font-weight: bolder;
+  z-index: 99;
 }
 
 .left-play img {
