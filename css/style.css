@@ -14,9 +14,9 @@ body {
   /* border: solid white 1px; */
 }
 
-/* div {
+div {
   border: solid pink 1px;
-} */
+}
 
 .container {
   background-color: blue;
@@ -50,18 +50,13 @@ main {
   max-width: 30px;
 }
 
-.side-menu .logo {
-  border: solid white 1px;
-}
 
-.side-nav {
-  border: solid white 1px;
-}
+
+
 
 .side-playlist {
 
   font-size: 20px;
-  border: solid white 1px;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 80px);
@@ -111,7 +106,7 @@ main {
 }
 
 
-/*** app content ***/
+/*** APP CONTENT ***/
 
 .app-content {
   width: 100vw;
@@ -129,7 +124,7 @@ main {
   position: fixed;
   height: 50px;
   z-index: 5;
-  /* background-color: red; */
+
   width: 100vw;
   text-align: center;
   padding-top: 15px;
@@ -140,7 +135,7 @@ main {
 .app-upgrade > span:only-child {
   border-radius: 30px;
   border: solid white 2px;
-  /* display: inline-block; */
+
   width: 100px;
   margin-left: 500px;
   margin-top: 10px;
@@ -152,7 +147,7 @@ main {
 /* navigation bar */
 
 .app-nav {
-  margin: 50px 0;
+  margin: 50px 0 10px 0 ;
   display: flex;
   justify-content: center;
   background-color: #141922;
@@ -178,9 +173,39 @@ main {
 
 /* albums and songs */
 
-.test {
-  font-size: 60px;
+/* first row: recently */
+
+.albums-title {
+  font-size: 30px;
+  font-weight: 900;
 }
+
+.albums-recently {
+  display: flex;
+  /* justify-content: space-between; */
+  
+}
+
+.album-container {
+  border: solid 1px green;
+  text-align: center;
+}
+
+.album-container img {
+  width: 150px;
+  height: 150px;
+}
+
+/* second row: created for */
+
+.app-content section:nth-child(4) {
+  color: yellow;
+
+}
+
+/* third row: popular artists */
+
+
 
 /****** FOOTER SECTION ******/
 
