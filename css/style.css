@@ -12,23 +12,16 @@ body {
   box-sizing: border-box;
 }
 
-div {
-  /* border: solid pink 1px; */
-}
 
 a {
   text-decoration: none;
   color: grey;
-
 }
 
 a:hover  {
   color: white;
 }
 
-.all-playlists a:hover {
-  color: white;
-}
 
 
 /****** MAIN SECTION ******/
@@ -36,7 +29,6 @@ a:hover  {
 main {
   display: flex;
 }
-
 
 /**** SIDE MENU ****/
 
@@ -51,9 +43,7 @@ main {
   font-weight: 800;
   padding-left: 8px;
 
-
 }
-
 
 .side-menu .logo {
   width: 125px;
@@ -78,7 +68,6 @@ main {
   max-width: 23px;
   vertical-align: middle;
 
-
 }
 
 .side-nav div:nth-child(1) {
@@ -91,7 +80,6 @@ main {
 
 }
 
-
 .side-playlist {
   display: flex;
   flex-direction: column;
@@ -99,7 +87,6 @@ main {
   overflow: scroll;
 
 }
-
 
 .main-title-playlist {
   font-weight: 900;
@@ -110,12 +97,9 @@ main {
 
 }
 
-
 .create-playlist {
-
   color: black;
   display: inline-block;
-
 
 }
 
@@ -133,13 +117,16 @@ main {
 
 }
 
-
-
 .all-playlists {
   overflow: scroll;
   max-height: 50%;
 
 }
+
+.all-playlists a:hover {
+  color: white;
+}
+
 
 .all-playlists > a {
   display: block;
@@ -178,8 +165,6 @@ main {
   font-weight: 900;
   font-size: 1.2em;
 
-
-
 }
 
 
@@ -192,8 +177,6 @@ main {
   overflow: scroll;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-
 
 }
 
@@ -215,8 +198,6 @@ main {
   justify-content: flex-end;
   align-self: flex-end;
 
-
-
 }
 
 
@@ -227,9 +208,6 @@ main {
   margin: 5px 40px 5px 0;
   max-height: 40px;
   align-self: center;
-
-
-
 
 }
 
@@ -256,8 +234,6 @@ main {
 .app-nav ul > a {
   display: inline-block;
   margin: 0 10px;
-
-
 }
 
 .app-nav ul > a:first-child {
@@ -280,10 +256,10 @@ main {
 }
 
 .album-container {
-  /* border: solid 1px green; */
   text-align: center;
   margin: 10px;
   max-width: 150px;
+  position: relative;
 
 }
 
@@ -295,7 +271,7 @@ main {
 /* second row: created for */
 
 .app-content section:nth-child(4) {
-  /* color: yellow; */
+
 
 }
 
@@ -304,7 +280,6 @@ main {
 .app-content section:nth-child(5) img {
   border-radius: 50%;
 }
-
 
 /****** FOOTER ******/
 
@@ -317,13 +292,8 @@ main {
   justify-content: space-between;
   padding: 5px;
 
-
-
 }
 
-.footer-all * {
-
-}
 
 .footer-all > .left-play,.center-play,.right-play {
   align-self: center;
@@ -359,14 +329,9 @@ main {
 }
 
 .brano-name {
-
   align-self: center;
 }
 
-.brano-name span {
-
-
-}
 
 .brano-name span:last-child {
   color: #616061;
@@ -376,16 +341,12 @@ main {
   align-self: center;
   color: #616061;
 
-
 }
 
 .icons i {
   display: block;
 }
 
-.icons i:last-child {
-  /* margin: 0 5px; */
-}
 
 /*** center ***/
 
@@ -416,7 +377,6 @@ main {
 
 }
 
-
 .center-play .slider-bar {
   width: 24vw;
 
@@ -426,7 +386,6 @@ main {
   width: 7vw;
 
 }
-
 
 /*** right side ***/
 
@@ -439,11 +398,10 @@ main {
 .right-play span > i {
   margin: 0 10px;
 
-
 }
 
 .right-play {
-  /* margin-left: 1vw; */
+
 }
 
 .right-play .slider-bar {
@@ -464,9 +422,7 @@ main {
 
 }
 
-.album-container {
-  position: relative;
-}
+
 
 .album-container i {
   display: none;
@@ -485,7 +441,8 @@ main {
 }
 
 [class*="fa-play"]:hover {
-  font-size: 2.3em;
+  transform: scale(1.3);
+
 }
 
 .slider:hover .slider-amount {
@@ -513,7 +470,6 @@ main {
 
 
 }
-
 
 
 /****** MEDIA QUERIES ******/
@@ -557,12 +513,11 @@ main {
     display: none;
   }
 
-    /* APP CONTENT  */
+  /* APP CONTENT  */
 
   .app-content .app-upgrade {
     width: calc(100% - 45px);
   }
-
 
 
 
@@ -577,9 +532,6 @@ main {
   }
 
   .app-content section:nth-child(3) {
-
-
-
 
   }
 
