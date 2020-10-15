@@ -176,6 +176,8 @@ main {
   overflow: scroll;
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
+
 
 }
 
@@ -234,17 +236,23 @@ main {
   color: #7B7E82;
   font-weight: 900;
 
-
 }
 
 .app-nav ul {
   list-style: none;
+  text-align: center;
 
 }
 
 .app-nav ul > li {
   display: inline-block;
   margin: 0 10px;
+
+
+}
+
+.app-nav ul > li:first-child {
+  border-bottom: solid #ADFF2F 3px;
 }
 
 /**** ALBUMS & SONGS ****/
@@ -253,13 +261,24 @@ main {
 
 .albums-recently {
   display: flex;
-  /* justify-content: space-between; */
+  flex-wrap: wrap;
 
 }
 
+.app-content section:nth-child(3){
+  margin: 20px;
+
+
+}
+
+
+
 .album-container {
-  border: solid 1px green;
+  /* border: solid 1px green; */
   text-align: center;
+  margin: 10px;
+  max-width: 150px;
+
 }
 
 .album-container img {
@@ -270,7 +289,7 @@ main {
 /* second row: created for */
 
 .app-content section:nth-child(4) {
-  color: yellow;
+  /* color: yellow; */
 
 }
 
@@ -290,7 +309,7 @@ main {
   height: 80px;
   display: flex;
   justify-content: space-between;
-
+  padding: 5px;
 
 }
 
@@ -299,7 +318,7 @@ main {
   display: flex;
   font-weight: bolder;
   z-index: 99;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .slider-bar {
@@ -411,7 +430,7 @@ main {
 }
 
 .right-play {
-  margin-left: 1vw;
+  /* margin-left: 1vw; */
 }
 
 .right-play .slider-bar {
@@ -426,17 +445,61 @@ main {
 
 /****** MEDIA QUERIES ******/
 
-// Extra small devices (portrait phones, less than 576px)
+/* // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+// Small devices (landscape phones, 576px and up) */
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+@media all and (max-width: 576px) {
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+  /***** SIDE MENU *****/
 
-// Extra large devices (large desktops, 1200px and up)
+  .side-menu span,.main-title-playlist {
+    display: none;
+  }
+
+  .side-menu {
+    width: 50px;
+  }
+
+  .side-menu .logo .big-logo {
+    display: none;
+  }
+
+  .side-menu .small-logo {
+    width: 23px;
+  }
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) {
+
+  /***** SIDE MENU *****/
+  .side-menu .small-logo {
+    display: none;
+  }
+
+  .app-content section:nth-child(3) {
+    
+
+
+
+  }
+
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media all and (min-width: 992px) {
+
+  /***** SIDE MENU *****/
+  .side-menu .small-logo {
+    display: none;
+  }
+
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
