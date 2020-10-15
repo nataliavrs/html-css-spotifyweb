@@ -41,7 +41,7 @@ main {
 /**** SIDE MENU ****/
 
 .side-menu {
-  width: 250px;
+  min-width: 250px;
   max-height: calc(100vh - 80px);
   background-color: black;
   display: flex;
@@ -207,38 +207,36 @@ main {
 
 .app-upgrade {
   position: fixed;
-  height: 50px;
-  z-index: 5;
-  width: calc(100vw - 20%);
+  height: 80px;
+  width: calc(100% - 250px);
   text-align: center;
-  padding-top: 15px;
   background-color: rgba(0, 0, 0, 0.61);
-  background-color: red;
   display: flex;
-  /* flex-direction: row; */
   justify-content: flex-end;
-  /* align-content: flex-start; */
+  align-self: flex-end;
+
 
 
 }
 
 
-
 .app-upgrade > span:only-child {
   border-radius: 30px;
-  border: solid white 2px;
-  width: 20%;
+  border: solid white 1px;
+  padding: 10px 30px 10px 30px;
+  margin: 5px 40px 5px 0;
+  max-height: 40px;
+  align-self: center;
 
-  /* margin-left: 40vw;
-  margin-top: 10px;
-  padding: 1%; */
+
+
 
 }
 
 /** navigation bar **/
 
 .app-nav {
-  margin: 50px 0 10px 0 ;
+  margin: 90px 0 10px 0 ;
   display: flex;
   justify-content: center;
   background-color: #141922;
@@ -510,6 +508,13 @@ main {
   top: 20%;
 }
 
+.app-upgrade span:hover {
+  transform: scale(1.2);
+
+
+}
+
+
 
 /****** MEDIA QUERIES ******/
 
@@ -527,11 +532,17 @@ main {
   }
 
   .side-menu {
-    width: 50px;
+    min-width: 10px !important;
+    text-align: center;
+
   }
 
   .side-menu .logo .big-logo {
     display: none;
+  }
+
+  .side-menu .logo {
+    width: 35px;
   }
 
   .side-menu .small-logo {
@@ -545,6 +556,15 @@ main {
   .all-playlists a {
     display: none;
   }
+
+    /* APP CONTENT  */
+
+  .app-content .app-upgrade {
+    width: calc(100% - 45px);
+  }
+
+
+
 
  }
 
