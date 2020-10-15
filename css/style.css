@@ -40,10 +40,6 @@ main {
 }
 
 
-
-
-
-
 .side-menu .logo {
   width: 125px;
   margin-left: 5px;
@@ -89,9 +85,6 @@ main {
 }
 
 
-
-
-
 .main-title-playlist {
   font-weight: 900;
   margin: 5px 0;
@@ -121,7 +114,7 @@ main {
   vertical-align: middle;
   color: #595959;
   font-size: 1.1em;
-  
+
 }
 
 
@@ -198,20 +191,33 @@ main {
   position: fixed;
   height: 50px;
   z-index: 5;
-  width: 100vw;
+  width: calc(100% - 210px);
   text-align: center;
   padding-top: 15px;
   background-color: rgba(0, 0, 0, 0.61);
+  background-color: red;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  /* align-content: flex-start; */
+
 
 }
+
+
 
 .app-upgrade > span:only-child {
   border-radius: 30px;
   border: solid white 2px;
-  width: 100px;
-  margin-left: 500px;
+  width: 176px;
+
+  /* margin-left: 40vw;
   margin-top: 10px;
-  padding: 10px;
+  padding: 1%; */
+
+
+
+
 
 
 }
@@ -275,16 +281,16 @@ main {
 }
 
 
-/****** FOOTER SECTION ******/
+/****** FOOTER ******/
 
 /**** PLAYER NAVIGATION ****/
 
 .footer-all {
   background-color: #282828;
   height: 80px;
-
   display: flex;
   justify-content: space-between;
+
 
 }
 
@@ -299,7 +305,6 @@ main {
 .slider-bar {
   display: inline-block;
   height: 6px;
-
   vertical-align: middle;
   background-color: grey;
   border-radius: 10px;
@@ -316,15 +321,17 @@ main {
 /*** left side ***/
 
 .left-play img {
-  max-height: 50px;
-}
-
-.brano-name * {
-  display: block;
+  max-height: 45px;
+  vertical-align: middle;
 
 }
 
-.brano-name span:first-child {
+.brano-name {
+
+  align-self: center;
+}
+
+.brano-name span {
 
 
 }
@@ -337,10 +344,15 @@ main {
   align-self: center;
   color: #616061;
 
+
+}
+
+.icons i {
+  display: block;
 }
 
 .icons i:last-child {
-  margin: 0 5px;
+  /* margin: 0 5px; */
 }
 
 /*** center ***/
@@ -349,6 +361,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40vw;
 }
 
 .slider,.player-btns {
@@ -357,25 +370,29 @@ main {
 
 .player-btns span > i {
   margin: 0 10px 10px 10px;
-  font-size: 20px;
+  font-size: 1em;
+
 }
 
 .player-btns [class*="fa-play"] {
-  font-size: 30px;
+  font-size: 2em;
 }
 
 .center-play .slider > span {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   vertical-align: middle;
+
 }
 
 
 .center-play .slider-bar {
-  width: 300px;
+  width: 24vw;
+
 }
 
 .center-play .slider-amount {
-  width: 100px;
+  width: 4vw;
+
 }
 
 
@@ -383,7 +400,6 @@ main {
 
 .right-play {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 
 }
@@ -394,11 +410,33 @@ main {
 
 }
 
+.right-play {
+  margin-left: 1vw;
+}
 
 .right-play .slider-bar {
-  width: 100px;
+  width: 9vw;
+
 }
 
 .right-play .slider-amount {
-  width: 40px;
+  width: 3vw;
 }
+
+
+/****** MEDIA QUERIES ******/
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
