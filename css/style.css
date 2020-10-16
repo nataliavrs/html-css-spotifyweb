@@ -26,7 +26,9 @@ a:hover  {
   display: none;
 }
 
-
+.footer-xs *{
+  display: none;
+}
 
 /****** MAIN SECTION ******/
 
@@ -604,6 +606,14 @@ main {
 
   /* TESTING NEW LAYOUT COPYING IOS APP */
   /* FOOTER  */
+
+  .app-content {
+    max-height: calc(100vh - 100px);
+  }
+
+  .footer-xs * {
+    display: inline-block;
+  }
 
   .footer-all {
     display: none;
