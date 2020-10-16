@@ -22,6 +22,10 @@ a:hover  {
   color: white;
 }
 
+.small-logo {
+  display: none;
+}
+
 
 
 /****** MAIN SECTION ******/
@@ -592,20 +596,84 @@ main {
 
   }
 
+
+  .app-nav {
+    margin: 90px 0 10px 0;
+
+  }
+
+  /* TESTING NEW LAYOUT COPYING IOS APP */
+  /* FOOTER  */
+
+  .footer-all {
+    display: none;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
   .app-upgrade {
     display: none;
   }
 
   .app-nav {
-    margin: 20px 0 10px 0;
+    display: none;
   }
 
-  /* FOOTER  */
+
+  /**** PLAYER NAVIGATION ****/
+
+  .footer-xs {
+    background-color: #282828;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0; */
+    border-top: solid 2px grey;
+  }
+
+  /* PLAYER */
+  .player-footer-xs {
+    display: flex;
+    /* justify-content: space-between; */
+
+  }
+
+  .player-footer-xs img {
+    max-height: 50px;
+
+
+  }
+
+  .song-title-xs span{
+    display: block;
+    font-weight: bold;
+
+  }
+
+  .song-title-xs span:last-child {
+    color: grey;
+  }
+
+
+  /* FOOTER NAV */
+  .nav-footer-xs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-footer-xs a > i {
+    font-size: 20px;
+    display: block;
+    text-align: center;
 
 
 
+  }
 
- }
+
+
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 577px) {
