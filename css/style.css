@@ -637,6 +637,8 @@ main {
   .player-footer-xs {
     display: flex;
     /* justify-content: space-between; */
+    flex-direction: row;
+    position: relative;
 
   }
 
@@ -646,9 +648,18 @@ main {
 
   }
 
+  .player-footer-xs [class*="fa-play"] {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.5em;
+  }
+
   .song-title-xs span{
     display: block;
     font-weight: bold;
+    margin: 5px 0;
+    margin-left: 10px;
 
   }
 
@@ -664,9 +675,10 @@ main {
   }
 
   .nav-footer-xs a > i {
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     text-align: center;
+    padding-top: 8px;
 
 
 
