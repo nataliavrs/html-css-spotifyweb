@@ -50,7 +50,7 @@ main {
 
 .side-menu .logo {
   width: 125px;
-  margin-left: 5px;
+  margin-left: 10px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -181,8 +181,8 @@ main {
 
 .app-content {
   width: 100vw;
-  /* background-color: #141922; */
-  background-color: lightblue;
+  background-color: #141922;
+
   max-height: calc(100vh - 90px);
   overflow: scroll;
   display: flex;
@@ -208,7 +208,7 @@ main {
   height: 80px;
   width: calc(100% - 220px);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.61);
+  background-color: rgba(0, 0, 0, 0.70);
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
@@ -239,6 +239,7 @@ main {
   color: #7B7E82;
   font-weight: 900;
 
+
 }
 
 .app-nav ul {
@@ -255,6 +256,7 @@ main {
 
 .app-nav a > li {
   border-bottom: solid 3px #141922;
+  font-size: 1.5em;
 
 }
 
@@ -265,14 +267,14 @@ main {
 .albums-recently {
   display: flex;
   flex-wrap: wrap;
-  background-color: pink;
+
 
 
 }
 
 .app-content section:nth-child(3) {
 
-  background-color: red;
+
 
 }
 
@@ -305,8 +307,8 @@ main {
 }
 
 .app-content section:nth-child(5) {
-  /* margin: 20px; */
-  background-color: red;
+
+
 }
 
 
@@ -353,13 +355,15 @@ main {
 /*** left side ***/
 
 .left-play img {
-  max-height: 45px;
+  max-height: 60px;
   vertical-align: middle;
+  padding-top: 5px;
 
 }
 
 .brano-name {
   align-self: center;
+  padding: 0 10px 10px 10px ;
 }
 
 
@@ -372,10 +376,12 @@ main {
   color: #616061;
   padding: 10px;
 
+
 }
 
-.icons i {
+.icons a > i {
   padding: 5px;
+  display: inline-block;
 }
 
 
@@ -424,6 +430,7 @@ main {
 .right-play {
   display: flex;
   align-items: center;
+  padding: 10px;
 
 }
 
@@ -450,7 +457,7 @@ main {
 
 .album-container:hover img {
   filter: grayscale(100%);
-  filter: opacity(20%);
+  filter: opacity(30%);
 
 }
 
@@ -546,12 +553,6 @@ main {
     display: none;
   }
 
-  .install hr {
-    opacity: 0%;
-    width: 1px;
-
-  }
-
   .side-menu {
     padding: 5px;
     min-width: 50px;
@@ -577,14 +578,91 @@ main {
 
   /* APP CONTENT  */
 
-  .app-content .app-upgrade {
-    width: calc(100% - 40px);
+  .album-container {
+    text-align: center;
+    padding: 5%;
+    width: calc(100% / 2);
+    position: relative;
+
+
 
   }
 
 
+
+
   .app-nav {
     margin: 90px 0 10px 0;
+    font-size: 0.7em;
+
+  }
+
+  /* FOOTER */
+
+  .icons a > i {
+    display: block;
+  }
+
+  /*** right side ***/
+
+  .right-play {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+  }
+
+  .right-play .fa-list,.fa-tv {
+    display: none;
+
+
+  }
+
+  /* left side */
+
+  .brano-name {
+    padding: 0 0px 0px 10px;
+  }
+
+  .icons {
+    padding: 0;
+  }
+
+
+
+ }
+
+/* // Small devices (landscape phones, 576px and up)  */
+
+@media all and (min-width: 577px) {
+
+
+
+  .side-menu .small-logo {
+    display: none;
+  }
+
+
+
+  /* APP CONTENT  */
+
+
+
+  .album-container {
+    text-align: center;
+    padding: 1%;
+    width: calc(100% / 3);
+    position: relative;
+
+
+  }
+
+
+
+
+  .app-nav {
+    margin: 90px 0 10px 0;
+    font-size: 0.7em;
 
   }
 
@@ -594,14 +672,12 @@ main {
     display: block;
   }
 
- }
 
-/* // Small devices (landscape phones, 576px and up)  */
-
+}
 
 
 /* // Medium devices (tablets, 768px and up) */
-@media all and (min-width: 577px) {
+@media all and (min-width: 768px) {
 
   /***** SIDE MENU *****/
   .side-menu .small-logo {
@@ -610,6 +686,21 @@ main {
 
   .app-content section:nth-child(3) {
 
+  }
+
+  .album-container {
+    text-align: center;
+    padding: 1%;
+    width: calc(100% / 4);
+    position: relative;
+
+
+  }
+
+  /* APP CONTENT */
+
+  .app-nav a > li {
+    font-size: 1.3em;
   }
 
 
@@ -623,15 +714,20 @@ main {
     display: none;
   }
 
+  .album-container {
+    text-align: center;
+    padding: 1%;
+    width: calc(100% / 6);
+    position: relative;
 
- }
 
-/* // Extra large devices (large desktops, 1200px and up) */
-@media all and (min-width: 1200px) {
-
-  /***** SIDE MENU *****/
-  .side-menu .small-logo {
-    display: none;
   }
+
+  /* APP CONTENT */
+
+  .app-nav a > li {
+    font-size: 2em;
+  }
+
 
  }
