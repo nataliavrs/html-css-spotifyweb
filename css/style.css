@@ -519,6 +519,14 @@ main {
 
 /* // Extra small devices (portrait phones, less than 576px) */
 
+@media all and (max-height: 300px) {
+
+  .side-nav,.profile-playlist,.install,.app-upgrade,.logo {
+    display: none;
+  }
+
+}
+
 @media all and (max-width: 576px) {
 
   /***** SIDE MENU *****/
@@ -584,14 +592,10 @@ main {
     width: calc(100% / 2);
     position: relative;
 
-
-
   }
 
   .app-upgrade {
     width: calc(100% - 40px);
-
-
   }
 
 
