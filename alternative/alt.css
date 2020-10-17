@@ -22,6 +22,9 @@ a:hover  {
   color: white;
 }
 
+.small-logo {
+  display: none;
+}
 
 .footer-xs *{
   display: none;
@@ -36,7 +39,7 @@ main {
 /**** SIDE MENU ****/
 
 .side-menu {
-  min-width: 220px;
+  min-width: 250px;
   max-height: calc(100vh - 90px);
   background-color: black;
   display: flex;
@@ -44,7 +47,7 @@ main {
   justify-content: space-between;
   color: #7B7E82;
   font-weight: 800;
-  padding: 8px 8px 8px 0;
+  padding-left: 8px;
 
 }
 
@@ -150,10 +153,17 @@ main {
 }
 
 .install hr {
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
+  width: 200px;
 
 }
 
+
+
+
+/* .install > i {
+  padding: 0 10px;
+} */
 
 .profile-playlist {
   padding-left: 10px;
@@ -181,8 +191,7 @@ main {
 
 .app-content {
   width: 100vw;
-  /* background-color: #141922; */
-  background-color: lightblue;
+  background-color: #141922;
   max-height: calc(100vh - 90px);
   overflow: scroll;
   display: flex;
@@ -206,7 +215,7 @@ main {
 .app-upgrade {
   position: fixed;
   height: 80px;
-  width: calc(100% - 220px);
+  width: calc(100% - 250px);
   text-align: center;
   background-color: rgba(0, 0, 0, 0.61);
   display: flex;
@@ -265,14 +274,14 @@ main {
 .albums-recently {
   display: flex;
   flex-wrap: wrap;
-  background-color: pink;
+  
 
 
 }
 
 .app-content section:nth-child(3) {
 
-  background-color: red;
+
 
 }
 
@@ -306,7 +315,7 @@ main {
 
 .app-content section:nth-child(5) {
   /* margin: 20px; */
-  background-color: red;
+
 }
 
 
@@ -370,14 +379,12 @@ main {
 .icons {
   align-self: center;
   color: #616061;
-  padding: 10px;
 
 }
 
 .icons i {
-  padding: 5px;
+  display: block;
 }
-
 
 
 /*** center ***/
@@ -554,9 +561,14 @@ main {
 
   .side-menu {
     padding: 5px;
-    min-width: 50px;
+    /* margin: 0 5px; */
   }
 
+  .side-menu  {
+    min-width: 50px;
+
+
+  }
 
   .side-nav div {
     padding: 5px 0;
@@ -578,7 +590,7 @@ main {
   /* APP CONTENT  */
 
   .app-content .app-upgrade {
-    width: calc(100% - 40px);
+    width: calc(100% - 45px);
 
   }
 
@@ -588,20 +600,101 @@ main {
 
   }
 
-  /* FOOTER */
+  /* TESTING NEW LAYOUT COPYING IOS APP */
+  /* FOOTER  */
 
-  .icons i {
-    display: block;
+  .app-content {
+    max-height: calc(100vh - 100px);
   }
 
- }
+  .footer-xs * {
+    display: inline-block;
+  }
+
+  .footer-all {
+    display: none;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  .app-upgrade {
+    display: none;
+  }
+
+  .app-nav {
+    display: none;
+  }
+
+
+  /**** PLAYER NAVIGATION ****/
+
+  .footer-xs {
+    background-color: #282828;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0; */
+    border-top: solid 2px grey;
+  }
+
+  /* PLAYER */
+  .player-footer-xs {
+    display: flex;
+
+    flex-direction: row;
+    position: relative;
+
+  }
+
+  .player-footer-xs img {
+    max-height: 50px;
+
+
+  }
+
+  .player-footer-xs [class*="fa-play"] {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 1.5em;
+  }
+
+  .song-title-xs span{
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+    margin-left: 10px;
+
+  }
+
+  .song-title-xs span:last-child {
+    color: grey;
+  }
+
+
+  /* FOOTER NAV */
+  .nav-footer-xs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-footer-xs a > i {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+
+
+
+  }
 
 /* // Small devices (landscape phones, 576px and up)  */
 
 
-
 /* // Medium devices (tablets, 768px and up) */
-@media all and (min-width: 577px) {
+@media (min-width: 577px) {
 
   /***** SIDE MENU *****/
   .side-menu .small-logo {
@@ -627,11 +720,4 @@ main {
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media all and (min-width: 1200px) {
-
-  /***** SIDE MENU *****/
-  .side-menu .small-logo {
-    display: none;
-  }
-
- }
+@media (min-width: 1200px) { ... }
