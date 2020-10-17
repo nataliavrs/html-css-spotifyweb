@@ -588,7 +588,11 @@ main {
 
   }
 
+  .app-upgrade {
+    width: calc(100% - 40px);
 
+
+  }
 
 
   .app-nav {
@@ -599,16 +603,23 @@ main {
 
   /* FOOTER */
 
-  .icons a > i {
-    display: block;
+  /* center */
+
+  .player-btns .fa-redo,.fa-random {
+    display: none;
   }
+
+  .player-btns {
+    font-size: 1.3em;
+  }
+
 
   /*** right side ***/
 
   .right-play {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 1px;
 
   }
 
@@ -616,6 +627,10 @@ main {
     display: none;
 
 
+  }
+
+  .icons a > i {
+    display: block;
   }
 
   /* left side */
